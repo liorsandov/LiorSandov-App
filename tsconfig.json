@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "preserve",
+    "downlevelIteration": true,
+    "plugins": [{
+      "name": "typescript-plugin-css-modules"
+    }]
+  },
+  "include": [
+    "src",
+    "src/*",
+    "src/**/*",
+    "styles/*",
+    "styles/*",
+    "styles/**/*",
+    "./css.d.ts",
+    "./additional.d.ts",
+    "additional.d.ts",
+    "../additional.d.ts"
+    
+  ],
+  "exclude": [
+    "src/**/__tests__/**/*"
+  ]
+}

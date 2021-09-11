@@ -1,0 +1,65 @@
+
+
+.ButtonContainer {
+    background: rgba(255,255,255,0.4);
+    margin-bottom: 1rem;
+    text-align: center; 
+    width: 50%;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 0px 6px rgba(50, 50, 50, 0.25);
+    /* box-shadow: 0px 0px 6px rgba(50, 50, 50, 0.25);  original */ 
+    box-shadow: 15px 14px 9px 0px rgb(50 50 50 / 25%);
+    border-radius: 10px;
+    border-top: 2px solid rgba(225,225,225, 0.2);
+    border-left: 2px solid rgba(225,225,225, 0.2);
+    border-right: 2px solid rgba(225,225,225, 0.3);
+    border-bottom: 2px solid rgba(225,225,225, 0.3);
+    filter:  drop-shadow(0px 20px 10px rgba(0, 0, 0, 0.30));
+}
+
+.MainText {
+    margin: 1rem;
+    color: rgba(255,255,255,.75);
+}
+
+.ButtonDiv {
+    margin-bottom: 1rem;
+}
+
+.Button:hover .ButtonText {
+    padding-right: 25px;
+}
+
+.Button {
+    border-radius: 10px;
+    background-color: #e7d2cc82;
+    border: none;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+    width: 250px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.ButtonText {
+    transition: 0.5s;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    color: rgba(255,255,255,.75);
+}
+
+.ButtonText:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.Button:hover .ButtonText::after {
+    opacity: 1;
+    right: 0;
+}
