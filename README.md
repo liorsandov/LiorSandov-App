@@ -1,12 +1,10 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
+![mainImage](/relative/mainImage.png?raw=true "project screen shot")
 
 ## Getting Started
+
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
 css fix for compiler -> https://spin.atomicobject.com/2020/06/22/css-module-typescript/
-1
-![mainImage](/relative/mainImage.png?raw=true "project screen shot")
-2
-![mainImage](/mainImage.png?raw=true "project screen shot")
 
 First, run the development server:
 
