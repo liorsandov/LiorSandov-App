@@ -27,7 +27,7 @@ const AddMovieButton = (props:AddMovieButtonProps) => {
                 <button className={style.Button} onClick={() => setMovieState(
                     addNewMovie(
                         `Movie ${(movieState.length+1).toString()}`,
-                        movieState.length.toString(),
+                        `$${(movieState.length+1).toString()}`,
                         movieState.length+1
                     ))}>
                     <span className={style.ButtonText}>Add New Movie</span>

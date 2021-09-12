@@ -32,4 +32,3 @@ export const MovieProvider = (props: NewType) => {
         </MovieContext.Provider>
     );
 };
-
