@@ -1,24 +1,18 @@
 import type { NextPage } from 'next'
-import React, {useState} from 'react'
-
-import styles from '../src/Index.module.css'
-import MovieList from '../src/components/MovieList/MovieList';
-import Nav from '../src/components/Nav/Nav';
-import AddMovieButtonProps from '../src/components/AddMovieButton/AddMovieButton'
-import { MovieProvider } from '../src/context/MovieContext';
-import { IlanProvider } from '../src/context/IlanContext';
+import styles from '../styles/Index.module.css'
+import React from 'react'
+import NavBar from '../src/components/NavBar/NavBar';
+import Box from '@mui/material/Box';
 
 const Home: NextPage = () => {
-
   return (
-    <div className={styles.container}>
-      <MovieProvider>
-        <IlanProvider>
-          <Nav />
-          <AddMovieButtonProps />
-          <MovieList />
-        </IlanProvider>
-      </MovieProvider>
+    <div>
+      <NavBar />
+      <Box sx={{maxWidth: '1600px', m: 'auto'}} className={styles.container}>
+        <div>
+          <h2>Main Page</h2>
+        </div>
+      </Box>
     </div>
   )
 }

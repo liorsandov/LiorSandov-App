@@ -1,15 +1,9 @@
 import React, { useContext } from 'react';
 import style from './Nav.module.css';
-import { MovieContext } from 'src/context/MovieContext';
+import { MovieContext } from '../../../context/MovieContext';
 
-export interface navProps {
-    name?: string;
-    price?: string;
-    id?: number;
-}
-
-const Nav = (props:navProps) => {
-    let { movieState, setMovieState} = useContext(MovieContext);
+const Nav = () => {
+    let { movieState } = useContext(MovieContext);
      
     return (
         <div className={style.NavContainer}>

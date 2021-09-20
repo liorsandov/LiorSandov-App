@@ -1,0 +1,19 @@
+.MovieListContainer {
+    background: var(--glass-background);
+    margin-bottom: 1rem;
+    text-align: center; 
+    width: 50%;
+    overflow: hidden;
+    -webkit-box-shadow: var(--glass-webkit-box-shadow);
+    box-shadow: var(--glass-box-shadow);
+    border-radius: var(--glass-border-radius);
+    border-top: var(--glass-border-top);
+    border-left: var(--glass-border-left);
+    border-right: var(--glass-border-right);
+    border-bottom: var(--glass-border-bottom);
+    filter:  var(--glass-filter);
+    color: var(--glass-color);
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}

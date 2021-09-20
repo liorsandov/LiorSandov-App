@@ -1,4 +1,14 @@
-body {
+.container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.Main {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -9,3 +19,4 @@ body {
   background: linear-gradient(to bottom,rgba(140,67,62,0.75),rgba(19,6,20,0.75)),url(https://picsum.photos/1502/1001?93);
   background-size: cover;
 }
+  

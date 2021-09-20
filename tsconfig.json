@@ -20,24 +20,23 @@
     "noEmit": true,
     "jsx": "preserve",
     "downlevelIteration": true,
-    "plugins": [{
-      "name": "typescript-plugin-css-modules"
-    }]
+    "plugins": [
+      {
+        "name": "typescript-plugin-css-modules"
+      }
+    ]
   },
-  "include": [
-    "src",
-    "src/*",
-    "src/**/*",
-    "styles/*",
-    "styles/*",
-    "styles/**/*",
-    "./css.d.ts",
-    "./additional.d.ts",
-    "additional.d.ts",
-    "../additional.d.ts"
-    
-  ],
+  // "include": [
+  //   // "src",
+  //   // "src/*",
+  //   // "path/to/css.d.ts",
+  // ],
   "exclude": [
     "src/**/__tests__/**/*"
+  ],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
   ]
 }

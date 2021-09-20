@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import style from './AddMovieButton.module.css';
-import { MovieContext } from 'src/context/MovieContext';
 
+import { MovieContext } from '../../../context/MovieContext';
 export interface AddMovieButtonProps {
     name?: string;
     price?: string;
@@ -17,6 +17,9 @@ const AddMovieButton = (props:AddMovieButtonProps) => {
             [...movieState, {name, price, id} ]
         )
     }
+    function clearmovies() {
+        setMovieState([])
+    }
      
     return (
         <div className={style.ButtonContainer}>
@@ -31,6 +34,9 @@ const AddMovieButton = (props:AddMovieButtonProps) => {
                         movieState.length+1
                     ))}>
                     <span className={style.ButtonText}>Add New Movie</span>
+                </button>
+                <button className={style.Button} onClick={() => clearmovies()} >
+                    <span className={style.ButtonText}>Clear Movies</span>
                 </button>
             </div>
         </div>  
