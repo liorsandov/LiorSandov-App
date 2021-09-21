@@ -1,3 +1,4 @@
+import React from 'react';
 import List from '@mui/material/List';
 import Divider from '@mui/material/Divider';
 import ListItem from '@mui/material/ListItem';
@@ -8,34 +9,31 @@ import Typography from '@mui/material/Typography';
 import style from './DrawerList.module.css';
 import Link from 'next/link'
 
-
-const ListTest = () => {
-    return (
-        <>
-          <Typography variant="subtitle2" component="div" className={style.ListTitle}>
-            Hooks
-          </Typography>
-          <Link href="/UseContext" passHref>
-            <ListItem button key={'UseContext'}>
-              <ListItemIcon>
-                <AllInclusiveIcon />
-              </ListItemIcon>
-              <ListItemText primary={'UseContext'} />
-            </ListItem>
-            </Link>
-        </>
-    )
+const ListTest = () : JSX.Element => {
+  return (
+    <>
+      <Typography variant="subtitle2" component="div" className={style.ListTitle}>
+        Hooks
+      </Typography>
+      <Link href="/UseContext" passHref>
+        <ListItem button key={'UseContext'}>
+          <ListItemIcon>
+            <AllInclusiveIcon />
+          </ListItemIcon>
+          <ListItemText primary={'UseContext'} />
+        </ListItem>
+        </Link>
+    </>
+  )
 };
 
-// export default Movie;
-
-export default function DrawerList() {
+export default function DrawerList(): JSX.Element {
     return(
-    <>
+      <>
         <List>
-         {ListTest()}
+        {ListTest()}
         </List>
         <Divider />
-    </>
+      </>
     )
-};
+}

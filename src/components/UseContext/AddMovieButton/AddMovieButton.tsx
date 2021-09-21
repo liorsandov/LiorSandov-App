@@ -8,9 +8,9 @@ export interface AddMovieButtonProps {
     id?: number;
 }
 
-const AddMovieButton = (props:AddMovieButtonProps) => {
+const AddMovieButton = (): JSX.Element => {
     
-    let { movieState, setMovieState} = useContext(MovieContext);
+    const { movieState, setMovieState} = useContext(MovieContext);
     
     function addNewMovie(name:string, price:string, id:number ){
         return (

@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext } from 'react'
 import Movie from '../Movie/Movie'
 import style from './MovieList.module.css';
 import { MovieContext } from '../../../context/MovieContext';
@@ -9,8 +9,8 @@ export interface movieListProps {
     id?: number;
 }
 
-const MovieList = (props: movieListProps) => {
-    let {movieState, setMovieState} = useContext(MovieContext);
+const MovieList = (): JSX.Element => {
+    const { movieState } = useContext(MovieContext);
         {console.log(movieState)}
         const displayList = () => {
             if(movieState.length >= 1) {
@@ -22,12 +22,12 @@ const MovieList = (props: movieListProps) => {
         }
     return (
         <>
-        {displayList() && (
-            <div className={style.MovieListContainer}>
-                {movieState.map(elm => (
-                    <Movie name={elm.name} price={elm.price} id={elm.id} key={elm.id}/>
-                ))}
-            </div>
+            {displayList() && (
+                <div className={style.MovieListContainer}>
+                    {movieState.map(elm => (
+                        <Movie name={elm.name} price={elm.price} id={elm.id} key={elm.id}/>
+                    ))}
+                </div>
             )}
         </>
     );
