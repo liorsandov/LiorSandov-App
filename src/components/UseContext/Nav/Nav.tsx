@@ -2,8 +2,8 @@ import React, { useContext } from 'react';
 import style from './Nav.module.css';
 import { MovieContext } from '../../../context/MovieContext';
 
-const Nav = () => {
-    let { movieState } = useContext(MovieContext);
+const Nav = (): JSX.Element => {
+    const { movieState } = useContext(MovieContext);
      
     return (
         <div className={style.NavContainer}>

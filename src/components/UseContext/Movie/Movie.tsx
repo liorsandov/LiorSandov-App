@@ -7,7 +7,7 @@ export interface movieProps {
     id?: number ;
 }
 
-const Movie = (props:movieProps) => {
+const Movie = (props:movieProps): JSX.Element => {
     return (
         <div>
             {props.name && <h3>Name: {props.name}</h3>}
