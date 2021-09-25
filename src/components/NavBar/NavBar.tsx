@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, {useState} from 'react';
 import Link from 'next/link'
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -7,11 +7,11 @@ import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import Drawer from '@mui/material/Drawer';
-import DrawerList from './DrawerList';
+import DrawerList from '../DrawerList/DrawerList';
 import style from './NavBar.module.css';
 
 export default function NavBar(): JSX.Element {
-  const [state, setState] = React.useState(false);
+  const [state, setState] = useState(false);
   const toggleDrawer = (open: boolean) => (event: React.KeyboardEvent | React.MouseEvent) => {
     if (
       event.type === 'keydown' &&
@@ -20,7 +20,7 @@ export default function NavBar(): JSX.Element {
       return;
       }
     setState(open);
-  };
+  }
 
   return (
     <>
@@ -51,7 +51,7 @@ export default function NavBar(): JSX.Element {
         onClose={toggleDrawer(false)}
       >
         <Box
-          sx={{ width: 250 }}
+          sx={{ width: 250, height: '100%', backgroundColor: '#121212' }}
           role="presentation"
           onClick={toggleDrawer(false)}
           onKeyDown={toggleDrawer(false)}

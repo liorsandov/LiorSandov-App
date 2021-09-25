@@ -1,0 +1,19 @@
+.listTitle {
+    text-align: center;
+    color: #fff;
+}
+
+.item {
+    color: #fff;
+    background-color: aqua;
+}
+
+.listItem {
+    color: #fff;
+    background-color: aqua;
+}
+
+.listItem:hover {
+    background-color: #fff;
+    background-color: aqua;
+}

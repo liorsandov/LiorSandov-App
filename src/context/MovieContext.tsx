@@ -18,7 +18,9 @@ export const movieDefaultValue = {
             id: 1
         }
     ],
-    setMovieState: (state: MovieContextState) => {} 
+    setMovieState: (state: MovieContextState) => {
+        return;
+    } 
 };
 
 export const MovieContext = React.createContext(movieDefaultValue);

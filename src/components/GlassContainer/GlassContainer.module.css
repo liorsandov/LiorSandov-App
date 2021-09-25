@@ -1,0 +1,66 @@
+.Container {
+    background: var(--glass-background);
+    margin-bottom: 1rem;
+    text-align: center; 
+    overflow: hidden;
+    -webkit-box-shadow: var(--glass-webkit-box-shadow);
+    box-shadow: var(--glass-box-shadow);
+    border-radius: var(--glass-border-radius);
+    border-top: var(--glass-border-top);
+    border-left: var(--glass-border-left);
+    border-right: var(--glass-border-right);
+    border-bottom: var(--glass-border-bottom);
+    filter:  var(--glass-filter);
+    color: var(--glass-color);
+    display: flex;
+    width: auto;
+    height: auto;
+    min-height: auto;
+}
+/* 
+.MainText {
+    margin: 1rem;
+    color: rgba(255,255,255,.75);
+}
+
+.ButtonDiv {
+    margin-bottom: 1rem;
+}
+
+.Button:hover .ButtonText {
+    padding-right: 25px;
+}
+
+.Button {
+    border-radius: 10px;
+    background-color: #e7d2cc82;
+    border: none;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+    width: 250px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.ButtonText {
+    transition: 0.5s;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    color: rgba(255,255,255,.75);
+}
+
+.ButtonText:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.Button:hover .ButtonText::after {
+    opacity: 1;
+    right: 0;
+} */

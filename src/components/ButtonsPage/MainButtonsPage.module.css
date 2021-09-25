@@ -1,0 +1,24 @@
+.Paper {
+    background-color: #121212;
+}
+.ListTitle {
+    text-align: center;
+    color: #fff;
+}
+.ListItem {
+    color: #fff;
+}
+.Item {
+    color: #fff;
+}
+.Item:hover {
+    background-color: #fff;
+}
+.Button {
+    background-color: blueviolet;
+    border-radius: 10px;
+    margin: 1.5rem;
+    border: none;
+    padding: 0.3rem 2rem;
+    cursor: pointer;
+}

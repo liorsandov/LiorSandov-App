@@ -1,6 +1,6 @@
+import React from 'react'
 import type { NextPage } from 'next'
 import styles from '../styles/Index.module.css'
-import React from 'react'
 import NavBar from '../src/components/NavBar/NavBar';
 import Box from '@mui/material/Box';
 
