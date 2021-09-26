@@ -7,12 +7,14 @@ export interface ButtonProps {
   color?: string;
 }
 
-console.log(color('red'));
 export default function Button(props: ButtonProps): JSX.Element {
   return (
     <div>
-      <button className={`${styles.Button} ${color(props.color || '')} `}>
-        <span>{props.name} (#)</span>
+      <button 
+        className={`${styles.Button} ${color(props.color || '')} `}
+        onClick={() => console.log(props)}
+      >
+        <span className={styles.ButtonText}>{props.name} (#)</span>
       </button>
     </div>
   );
