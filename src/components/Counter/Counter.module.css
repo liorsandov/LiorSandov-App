@@ -1,0 +1,50 @@
+.ButtonContainer {
+    text-align: center; 
+}
+
+.MainText {
+    margin: 1rem;
+    color: rgba(255,255,255,.75);
+}
+
+.ButtonDiv {
+    margin-bottom: 1rem;
+}
+
+.Button:hover .ButtonText {
+    padding-right: 25px;
+}
+
+.Button {
+    border-radius: 10px;
+    background-color: #e7d2cc82;
+    border: none;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+    width: 250px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.ButtonText {
+    transition: 0.5s;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    color: rgba(255,255,255,.75);
+}
+
+.ButtonText:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.Button:hover .ButtonText::after {
+    opacity: 1;
+    right: 0;
+}

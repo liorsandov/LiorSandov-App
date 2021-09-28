@@ -3,12 +3,6 @@ import Movie from '../Movie/Movie'
 import style from './MovieList.module.css';
 import { MovieContext } from '../../../context/MovieContext';
 
-export interface movieListProps {
-    name?: string;
-    price?: string;
-    id?: number;
-}
-
 const MovieList = (): JSX.Element => {
     const { movieState } = useContext(MovieContext);
         {console.log(movieState)}

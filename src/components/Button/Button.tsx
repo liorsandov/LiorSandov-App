@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Button.module.css';
-import color from '../../../utils/color';
+import color from '../../utils/color';
 
 export interface ButtonProps {
   name?: string;

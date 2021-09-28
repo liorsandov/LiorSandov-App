@@ -8,11 +8,13 @@ const Home: NextPage = () => {
   return (
     <div>
       <NavBar />
+      <div className={styles.container}> 
       <Box sx={{maxWidth: '1600px', m: 'auto'}} className={styles.container}>
         <div>
           <h2>Main Page</h2>
         </div>
       </Box>
+      </div>
     </div>
   )
 }

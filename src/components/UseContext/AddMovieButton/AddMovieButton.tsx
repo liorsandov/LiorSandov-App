@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
 import style from './AddMovieButton.module.css';
-
 import { MovieContext } from '../../../context/MovieContext';
 export interface AddMovieButtonProps {
     name?: string;

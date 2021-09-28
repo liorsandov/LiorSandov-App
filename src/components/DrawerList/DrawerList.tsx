@@ -8,6 +8,7 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import Paper from '@mui/material/Paper';
 import ColorLensIcon from '@mui/icons-material/ColorLens';
+import MergeTypeIcon from '@mui/icons-material/MergeType';
 
 export interface DrawerListProps {
   icon: JSX.Element;
@@ -17,7 +18,8 @@ export interface DrawerListProps {
 
 const data: DrawerListProps[] = [
   { icon: <AllInclusiveIcon />, label: 'UseContext', link:'/UseContext'},
-  { icon: <ColorLensIcon />, label: 'Buttons', link:'/ButtonsPage'}
+  { icon: <ColorLensIcon />, label: 'Buttons', link:'/ButtonsPage'},
+  { icon: <MergeTypeIcon />, label: 'Axios', link:'/AxiosPage'}
 ]
 
 export default function ListItems() :JSX.Element {
